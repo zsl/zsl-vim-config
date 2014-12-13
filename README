@@ -1,0 +1,11 @@
+linux下使用：
+将_vimrc拷贝到~/.vimrc
+将vimfiles拷贝到~/.vim
+
+windows下使用:
+将_vimrc和vimfiles拷贝到vim安装路径下即可
+vim --vim74
+   \
+    -- _vimrc
+    |
+    -- vimfiles

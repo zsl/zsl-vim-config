@@ -1,5 +1,5 @@
 " Vim Pathogen 
-runtime bundle/pathogen/autoload/pathogen.vim
+runtime bundle/pathgen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
