@@ -227,6 +227,7 @@ syntax enable
 syntax on
 filetype plugin indent on
 
+highlight FoldColumn ctermfg=7 ctermbg=0
 " ================================ File Types ======================================
 
 " C++
