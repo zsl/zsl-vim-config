@@ -227,7 +227,9 @@ syntax enable
 syntax on
 filetype plugin indent on
 
-highlight FoldColumn ctermfg=7 ctermbg=0
+if !g:isGUI
+    highlight FoldColumn ctermfg=7 ctermbg=0
+endif
 " ================================ File Types ======================================
 
 " C++
@@ -240,7 +242,7 @@ au BufNewFile,BufRead *
 \ endif
 
 " vimprj
-au BufNewFile,BufRead *.vimprj set syntax=vim
+" au BufNewFile,BufRead *.vimprj set syntax=vim
 
 " miniBuffer
 let g:miniBufExplMapCTabSwitchBufs = 1
@@ -256,3 +258,5 @@ let g:SuperTabDefaultCompletionType='<c-x><c-u><c-p>'
 " (incompatible with g:clang_auto_select=0, using the above)
 " let g:SuperTabContextDefaultCompletionType='<c-x><c-u><c-p>'
 
+" auto-pair …Ë÷√
+let g:AutoPairs = {'(':')', '[':']', "'":"'",'"':'"', '`':'`'}
